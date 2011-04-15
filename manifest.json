@@ -1,0 +1,18 @@
+{
+  "name": "TextMate Error Linking",
+  "version": "1.2.1",
+  "description": "Adds links to TextMate from errors for debugging purposes",
+  "browser_action": {
+    "default_icon": "textmate.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://localhost*/*"
+  ],
+  "content_scripts": [
+      {
+        "matches": ["http://localhost/*"],
+        "js": ["script.js"]
+      }
+    ]
+}
